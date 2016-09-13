@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>文档签署</title>
+  <meta name="description" content="Signature Pad - HTML5 canvas based smooth signature drawing using variable width spline interpolation.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link rel="stylesheet" href="signature_index.css">
+
+
+  </script>
+</head>
+<body onselectstart="return false">
+	
+  <div id="signature-pad" class="m-signature-pad">
+  	<div class="m-signature-pad--header">
+		<div class="description">文档签署</div>
+      <div type="button" class="button_clear" data-action="clear"></div>
+	</div>
+    <div class="m-signature-pad--body">
+      <canvas></canvas>
+    </div>
+    <div class="m-signature-pad--footer">
+
+      <input  class="pen-light"  type="button" data-action="light"></input>
+      <input class="pen-normal"  type="button" data-action="normal"></input>
+      <input class="pen-bold"  type="button" data-action="bold"></input>
+
+      <input  class="pen-black" type="button" data-action="black"></input>
+      <input  class="pen-blue" type="button" data-action="blue"></input>
+      <input  class="pen-pink" type="button" data-action="pink"></input>
+
+      <button type="button" class="button save" data-action="save">完成</button>
+    </div>
+  </div>
+
+  <script src="signature_pad_index.js"></script>
+  <script src="app_index.js"></script>
+</body>
+</html>
